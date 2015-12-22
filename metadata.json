@@ -1,0 +1,14 @@
+{
+  "name": "jhg03a-agentfacts",
+  "version": "0.1.0",
+  "author": "jhg03a",
+  "summary": "A module to convert puppet agent configuration to custom facts for use in manifests",
+  "license": "Apache-2.0",
+  "source": "https://github.com/jhg03a/puppet-agentfacts.git",
+  "project_page": "https://github.com/jhg03a/puppet-agentfacts",
+  "issues_url": "https://github.com/jhg03a/puppet-agentfacts/issues",
+  "dependencies": [
+    {"name":"puppetlabs-stdlib","version_requirement":">= 1.0.0"}
+  ]
+}
+
