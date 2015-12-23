@@ -12,11 +12,11 @@
 
 ## Overview
 
-This is a module to convert agent local configuration data to facter facts.  While not super helpful by itself, it is handy in conjunction with other modules.  For example, being able to reference the puppet agent SSL certificate location information from your mCollective profile.
+This is a module to convert agent local configuration data to a structured fact.  While not super helpful by itself, it is handy in conjunction with other modules.  For example, being able to reference the puppet agent SSL certificate location information from your mCollective profile.
 
 ## Module Description
 
-This module utilizes the agent `puppet config print` command via ruby and converts the output to facter facts.
+This module utilizes the Puppet.settings global variable and converts the output to a structured fact.
 
 ## Setup
 
@@ -27,11 +27,10 @@ This is a read-only module and cannot alter agent information
 ### Beginning with agentfacts
 
 Add this puppet module to your catalog and you should get facts about each puppet agent configuration on your next puppet run.
-These facts are prefixed with "agentfacts_" to prevent name colissions.
 
 ## Reference
 
-This adds all the entries from `puppet config print` prefixed with "agentfacts_" to prevent fact name collision.
+This adds all the entries from `puppet config print` as children of the agentfacts structured fact.
 
 
 ## Development
