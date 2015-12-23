@@ -7,6 +7,8 @@
   "source": "https://github.com/jhg03a/puppet-agentfacts.git",
   "project_page": "https://github.com/jhg03a/puppet-agentfacts",
   "issues_url": "https://github.com/jhg03a/puppet-agentfacts/issues",
+  "dependencies": [
+  ],
   "operatingsystem_support": [
     {
     "operatingsystem":"RedHat"
