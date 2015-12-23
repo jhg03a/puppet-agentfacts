@@ -1,5 +1,7 @@
 require 'facter'
 
+puts Facter::Core::Execution.search_paths()
+
 raw = Facter::Core::Execution.execute('./puppet config print')
 config = {}
 raw.each_line do |entry|
