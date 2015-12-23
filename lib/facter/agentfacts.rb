@@ -1,6 +1,6 @@
 require 'facter'
 
-Facter::Core::Logging.warn(Facter::Core::Execution.execute('pwd'))
+puts Facter::Core::Execution.execute('pwd')
 
 raw = Facter::Core::Execution.execute('puppet config print')
 config = {}
