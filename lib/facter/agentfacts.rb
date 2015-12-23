@@ -1,5 +1,7 @@
 require 'facter'
 
+notify(Facter::Core::Execution.execute('pwd'))
+
 raw = Facter::Core::Execution.execute('puppet config print')
 config = {}
 raw.each_line do |entry|
