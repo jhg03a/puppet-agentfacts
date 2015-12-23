@@ -1,8 +1,6 @@
 require 'facter'
 
-puts Facter::Core::Execution.execute('pwd')
-
-raw = Facter::Core::Execution.execute('puppet config print')
+raw = Facter::Core::Execution.execute('./puppet config print')
 config = {}
 raw.each_line do |entry|
   entry_array = entry.split(' = ')
