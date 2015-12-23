@@ -1,7 +1,5 @@
 require 'facter'
 
-puts Facter::Core::Execution.search_paths()
-
 raw = ""
 Facter::Core::Execution.with_env('PATH' => './') do
   raw = Facter::Core::Execution.execute('puppet config print')
