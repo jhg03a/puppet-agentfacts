@@ -1,6 +1,6 @@
 {
   "name": "jhg03a-agentfacts",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": "jhg03a",
   "summary": "A module to convert puppet agent configuration to custom facts for use in manifests",
   "license": "Apache-2.0",
