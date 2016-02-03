@@ -43,5 +43,6 @@ This adds all the entries from `puppet config print` as children of the agentfac
 
 ## Changelog
 
+- v1.0.2 - Fixed bug which wouldn't have set the environment properly when running from facter
 - v1.0.1 - Added additional documentation to readme
 - v1.0.0 - Initial Release
